@@ -42,7 +42,7 @@ void Update(AlxWindow* w){
 	if(Stroke(ALX_KEY_E).DOWN) Regler2 *= 1.01;
 	if(Stroke(ALX_KEY_D).DOWN) Regler2 *= 0.99;
     
-    Sprite now = Sprite_None();
+    Sprite now = Sprite_Null();
     int width = 0,height = 0;
     now.img = RLCamera_Get(&rlc,&width,&height);
     now.w = width;
@@ -53,7 +53,7 @@ void Update(AlxWindow* w){
     if(now.img){
         Sprite_Render(WINDOW_STD_ARGS,&sp,0.0f,0.0f);
 
-        Sprite trans = Sprite_None();
+        Sprite trans = Sprite_Null();
         if(Mode==0){
             Sprite_Render(WINDOW_STD_ARGS,&sp,0.0f,0.0f);
         }else if(Mode==1){
