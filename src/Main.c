@@ -1,3 +1,11 @@
+/*
+Destroy:
+sudo modprobe -r v4l2loopback
+
+Build:
+sudo modprobe v4l2loopback devices=1 video_nr=10 card_label="VirtualCam" exclusive_caps=1
+*/
+
 #include "/home/codeleaded/System/Static/Library/WindowEngine1.0.h"
 #include "/home/codeleaded/System/Static/Library/RLCamera.h"
 #include "/home/codeleaded/System/Static/Library/ImageFilter.h"
