@@ -21,7 +21,7 @@ int Mode = 0;
 
 void Setup(AlxWindow* w){
     rlc = RLCamera_New("/dev/video0",RLCAMERA_WIDTH * 2,RLCAMERA_HEIGHT * 2);
-    orlc = ORLCamera_New("/dev/video10",RLCAMERA_WIDTH * 2,RLCAMERA_HEIGHT * 2);
+    orlc = ORLCamera_New(10,"VirtualCamera",RLCAMERA_WIDTH * 2,RLCAMERA_HEIGHT * 2);
 
     //RLCamera_JPEG_Save(&rlc,"Bild.jpg");
     //window.Running = 0;
